@@ -23,6 +23,12 @@ Program to find the L and U matrix.
 Developed by: yuvan raj R
 RegisterNumber: 25014899
 */
+import numpy as np
+from scipy.linalg import lu
+a=np.array(eval(input()))
+p,l,u=lu(a)
+print(l)
+print(u)
 ```
 (ii) To find the LU Decomposition of a matrix
 ```
@@ -31,16 +37,23 @@ Program to find the LU Decomposition of a matrix.
 Developed by: yuvan raj R
 RegisterNumber: 25014899
 */
+
+# To print X matrix (solution to the equations)
+import numpy as np
+from scipy.linalg import lu_factor,lu_solve
+a=np.array(eval(input()))
+b=np.array(eval(input()))
+lu,pivot=lu_factor(a)
+x=lu_solve((lu,pivot),b)
+print(x)
 ```
 
 ## Output:
 ![lu decomposition]()
 
-<img width="687" height="320" alt="Screenshot 2025-10-17 102451" src="https://github.com/user-attachments/assets/8f1a3705-4614-46c3-87c4-b12672fe8c3a" />
 
-<img width="1161" height="441" alt="Screenshot 2025-10-17 102514" src="https://github.com/user-attachments/assets/a596405f-124e-4808-a10f-8ad001ba2d01" />
+<img width="1161" height="441" alt="Screenshot 2025-10-17 102514" src="https://github.com/user-attachments/assets/4cfc7679-3328-4cbf-9ec3-595cfb026670" />
 
-<img width="737" height="386" alt="Screenshot 2025-10-17 102542" src="https://github.com/user-attachments/assets/bae07469-b285-4a26-9aca-ee6f7dd57418" />
 
 <img width="880" height="180" alt="Screenshot 2025-10-17 102556" src="https://github.com/user-attachments/assets/137517c4-f403-4c3d-9214-ea8694f5c094" />
 
