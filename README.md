@@ -20,8 +20,8 @@ To write a program to find the LU Decomposition of a matrix.
 ```
 /*
 Program to find the L and U matrix.
-Developed by: 
-RegisterNumber: 
+Developed by: yuvan raj R
+RegisterNumber: 25014899
 */
 ```
 (ii) To find the LU Decomposition of a matrix
